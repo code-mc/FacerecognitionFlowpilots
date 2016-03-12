@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.CameraCalibrateActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/title_activity_main"/>
+
+    <LinearLayout
+        android:id="@+id/calibrate_buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="12dp"
+            app:materialIcon="rotate_left"
+            app:materialIconColor="@color/white"
+            android:scaleType="fitCenter"
+
+            android:id="@+id/calibrate_rotate_left"
+            />
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="12dp"
+            app:materialIcon="rotate_right"
+            app:materialIconColor="@color/white"
+            android:scaleType="fitCenter"
+
+            android:id="@+id/calibrate_rotate_right"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/calibrate_help"/>
+
+    <ImageView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@id/calibrate_buttonbar"
+        android:id="@+id/calibrate_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:materialIcon="camera_iris"
+        app:materialIconColor="@color/white"
+
+        android:id="@+id/calibrate_capture"
+    />
+
+</RelativeLayout>

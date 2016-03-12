@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FlowpilotsFacerecognition</string>
+    <string name="title_activity_main">Face Signin</string>
+    <string name="select_picture">Set Picture</string>
+    <string name="title_activity_gallery">Signed In</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_in">Sign In</string>
+    <string name="greet_message">Welcome back %s</string>
+    <string name="whos_this">Who\'s This?</string>
+    <string name="add_user">Add User</string>
+    <string name="new_name_hint">John</string>
+    <string name="toast_upload_train">Studying face %s left</string>
+    <string name="toast_upload_identify">Identifying %s pics</string>
+    <string name="action_delete_training_data">Delete Training Data</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_success">Deleted!</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="title_activity_camera_calibrate">Camera Calibrate</string>
+    <string name="calibrate_help">Snap a selfie using the button below and rotate the selfie in the correct position to calibrate the camera.</string>
+    <string name="loading_image">Loading Image…</string>
+    <string name="not_face_detected">No face detected in photo.</string>
+    <string name="face_added">Added face to training set!</string>
+    <string name="couldnt_identify_person">Couldn\'t identify the person in this image.</string>
+    <string name="delete_all_message">Deleting…</string>
+    <string name="action_calibrate_camera">Calibrate Camera</string>
+</resources>
